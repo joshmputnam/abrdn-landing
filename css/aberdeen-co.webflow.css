@@ -2159,13 +2159,25 @@ figcaption {
   background-color: var(--primary);
   mix-blend-mode: normal;
   border: 1px #000;
-  border-radius: 50%;
+  border-radius: 5px 5% 50% 50%;
   position: absolute;
 }
 
 .lottie-animation {
+  z-index: 5;
   width: 55px;
   height: 55px;
+  position: absolute;
+}
+
+.lottie-animation.purple {
+  z-index: 1;
+  display: flex;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
 }
 
 .navbar-body {
@@ -2302,6 +2314,7 @@ figcaption {
 .link-block-2 {
   width: 100%;
   margin-top: 47px;
+  text-decoration: none;
   transform: rotate(-90deg);
 }
 
@@ -2312,6 +2325,7 @@ figcaption {
 .text-block {
   color: var(--white);
   font-family: Exo, sans-serif;
+  text-decoration: none;
 }
 
 .contact1_component {
@@ -2320,6 +2334,9 @@ figcaption {
   flex-direction: column;
   align-items: stretch;
   margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
 }
 
 .contact1_form {
@@ -2760,7 +2777,7 @@ figcaption {
 }
 
 .pop-up-bg {
-  z-index: 5;
+  z-index: 20;
   width: 100%;
   min-height: 100vh;
   background-color: rgba(0, 0, 0, .31);
@@ -2794,7 +2811,13 @@ figcaption {
 
 .link-block-3 {
   z-index: 3;
+  margin-top: .5rem;
+  margin-right: .6rem;
   position: absolute;
+  top: 0%;
+  bottom: auto;
+  left: auto;
+  right: 0%;
 }
 
 .image-5 {
@@ -2868,6 +2891,10 @@ figcaption {
   border-radius: 8px;
   position: absolute;
   transform: translate(8px, -43px);
+}
+
+.text-field {
+  border-radius: 6px;
 }
 
 @media screen and (max-width: 991px) {
@@ -3208,6 +3235,10 @@ figcaption {
     padding: 2rem;
   }
 
+  .home_3_features-list_image-wrapper {
+    display: none;
+  }
+
   .home_4_benefits_component {
     min-height: auto;
     grid-column-gap: 3rem;
@@ -3225,7 +3256,7 @@ figcaption {
 
   .home_5_recent-work_list {
     grid-column-gap: 2rem;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 
   .footer4_top-wrapper {
@@ -3274,6 +3305,13 @@ figcaption {
     height: 100%;
     min-height: 105vh;
     object-fit: fill;
+  }
+
+  .pattern-grid {
+    width: 100%;
+    max-width: 100%;
+    justify-content: center;
+    overflow: hidden;
   }
 
   .layout417_component {
@@ -3508,6 +3546,10 @@ figcaption {
     font-size: 2rem;
   }
 
+  .button-group {
+    justify-content: center;
+  }
+
   .text-style-nowrap {
     white-space: normal;
   }
@@ -3596,6 +3638,10 @@ figcaption {
 
   .home_3_features-list_card-content {
     padding: 1.5rem;
+  }
+
+  .home_3_features-list_image-wrapper {
+    display: none;
   }
 
   .home_4_benefits_component {
@@ -3848,7 +3894,24 @@ figcaption {
     max-width: none;
   }
 
-  .home_2_feature_list, .home_4_benefits_component {
+  .button-group {
+    justify-content: center;
+  }
+
+  .home_2_feature_list {
+    grid-template-columns: 1fr;
+  }
+
+  .home_3_features-list_card {
+    grid-column-gap: 4rem;
+    grid-row-gap: 4rem;
+  }
+
+  .home_3_features-list_image-wrapper {
+    display: none;
+  }
+
+  .home_4_benefits_component {
     grid-template-columns: 1fr;
   }
 
@@ -3856,6 +3919,7 @@ figcaption {
     grid-template-columns: 1fr;
     padding-left: 5%;
     padding-right: 5%;
+    overflow: hidden;
   }
 
   .home_4_benefits_title {
@@ -3866,9 +3930,23 @@ figcaption {
     margin-top: 3rem;
   }
 
+  .home_4_benefits_card.card-1, .home_4_benefits_card.card-2, .home_4_benefits_card.card-3, .home_4_benefits_card.card-4, .home_4_benefits_card.card-5 {
+    min-width: 0;
+  }
+
   .home_5_recent-work_title-wrapper {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+  }
+
+  .home_6_pricing_plan {
+    min-width: 0;
+  }
+
+  .home_6_pricing_content {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
   }
 
   .layout9_item-list {
@@ -3883,6 +3961,10 @@ figcaption {
     margin-top: 0;
     margin-left: 0;
     margin-right: 0;
+  }
+
+  .contact1_component {
+    min-width: 0;
   }
 
   .header-logo-container {
@@ -4307,7 +4389,7 @@ figcaption {
   align-self: start;
 }
 
-#w-node-_79d4db6a-d991-6855-c52d-26feccb93938-04013d8e {
+#w-node-ae24594b-cda3-01e6-6128-af52e3aac591-04013d8e {
   justify-self: center;
 }
 
