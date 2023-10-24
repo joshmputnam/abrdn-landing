@@ -2574,6 +2574,7 @@ figcaption {
 }
 
 .modal_small.shadow-large {
+  align-items: center;
   padding-top: 30px;
 }
 
